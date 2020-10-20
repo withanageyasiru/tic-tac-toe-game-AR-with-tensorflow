@@ -7,7 +7,7 @@ from trainer.train import Train
 def main():
     print("main")
     data = DataLoader()   
-    x_train,y_train = data.loadData("data\Train")
+    x_train,y_train = data.loadData("Symble Detection\data\Train")
     preprocessor = Preprocess()
     x_train,y_train = preprocessor.Preprocess(x_train,y_train)
     model = Model()
